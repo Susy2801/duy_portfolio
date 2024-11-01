@@ -1,15 +1,22 @@
 import "./header.css";
+import logo from "../Asset/Logo_main.png";
 
 function Header() {
   return (
     <div className="header__container">
       <div className="header__box d-flex justify-content-between p-4 ">
-        <img src="" alt="logo" className="ms-5"></img>
-        <nav className="d-flex me-5 justify-content-between">
-          <div>Home</div>
-          <div>Home</div>
-          <div>Home</div>
-          <div>Home</div>
+        <nav className="d">
+          <a href="#home" className="nav__btn">
+            Home
+          </a>
+          <a href="#experience" className="nav__btn">
+            Work Experience
+          </a>
+          <img src={logo} alt="logo" className="header__logo"></img>
+          <a className="nav__btn">My Journey</a>
+          <a href="#contact" className="nav__btn">
+            Contact
+          </a>
         </nav>
       </div>
     </div>

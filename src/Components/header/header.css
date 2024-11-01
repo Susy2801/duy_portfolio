@@ -1,3 +1,52 @@
+.header__container {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.header__box {
+  background-color: black;
+  color: white;
+  width: 1298px;
+  height: 86px;
+  border-radius: 50px;
+}
+
+.header__logo {
+  width: 50px;
+}
 nav {
-  width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav__btn {
+  width: 136px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav__btn:hover {
+  background-color: #fd853a;
+  transition: 0.3s all ease;
+}
+
+.nav__btn.active {
+  background-color: #fd853a;
 }
