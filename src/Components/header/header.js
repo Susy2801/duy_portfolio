@@ -1,4 +1,5 @@
 import "./header.css";
+
 import logo from "../Asset/Logo_main.png";
 
 function Header() {
@@ -9,11 +10,19 @@ function Header() {
           <a href="#home" className="nav__btn">
             Home
           </a>
+          <a href="#journey" className="nav__btn">
+            My Journey
+          </a>
           <a href="#experience" className="nav__btn">
             Work Experience
           </a>
+
           <img src={logo} alt="logo" className="header__logo"></img>
-          <a className="nav__btn">My Journey</a>
+
+          <a className="nav__btn" href="#skill">
+            Skill
+          </a>
+          <a className="nav__btn">Project</a>
           <a href="#contact" className="nav__btn">
             Contact
           </a>
